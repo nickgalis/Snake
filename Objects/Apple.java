@@ -1,6 +1,6 @@
 package Objects;
 
-import Game.Main;
+import Game.Game;
 
 public class Apple {
     public int x;       //x coordinate
@@ -13,6 +13,9 @@ public class Apple {
     }
 
     public void setPosition() {       //changes position of apple
-        ;  //placeholder for now
+        x = (int) (Math.random() * Game.WIDTH);
+        y = (int) (Math.random() * Game.WIDTH);
+
+        
     }
 }

@@ -11,6 +11,11 @@ import java.awt.event.KeyEvent;
  
 
 public class Game extends JPanel implements ActionListener {
+
+  public static final int SCALE = 32;
+  public static final int WIDTH = 20;
+  public static final int HEIGHT = 20;
+  public static final int SPEED = 4;
   public static void main(String[] args) {
         ;            //placeholder
     }
