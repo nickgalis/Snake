@@ -36,15 +36,15 @@ public class Snake {
         if (direction == 2) X[0]--;
         if (direction == 3) Y[0]--;
 
-        for (int d = length - 1; d > 0; d--) {
+        for (int d = size - 1; d > 0; d--) {
             if ((X[0] == X[d]) & (X[0] == Y[d])) {
                 size = d - 2;
             }
         }
 
-        if (X[0] > main.WIDTH) snakeX[0] = 0;
+        if (X[0] > main.WIDTH) X[0] = 0;
         if (X[0] < 0) X[0] = main.WIDTH - 1;
-        if (Y[0] > main.HEIGHT - 1) snakeY[0] = 0;
+        if (Y[0] > main.HEIGHT - 1) Y[0] = 0;
         if (Y[0] < 0) Y[0] = main.HEIGHT - 1;
  
         if (size < 2) {
