@@ -12,6 +12,7 @@ public class Apple {
         y = startY; 
     }
 
+    @SuppressWarnings("static-access")
     public void setPosition() {       //changes position of apple
         x = (int) (Math.random() * Game.WIDTH);
         y = (int) (Math.random() * Game.WIDTH);

@@ -24,7 +24,8 @@ public class Snake {
     }
 
 
-
+    @SuppressWarnings("static-access")
+    
     public void move() {
         for (int d = size; d > 0; d--) {
             X[d] = X[d - 1];
